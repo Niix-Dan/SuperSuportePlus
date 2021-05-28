@@ -1,0 +1,49 @@
+#   _____                       _____                        _                  #
+#  / ____|                     / ____|                      | |            _    #
+# | (___  _   _ _ __   ___ _ _| (___  _   _ _ __   ___  _ __| |_ ___     _| |_  #
+#  \___ \| | | | '_ \ / _ \ '__\___ \| | | | '_ \ / _ \| '__| __/ _ \   |_   _| #
+#  ____) | |_| | |_) |  __/ |  ____) | |_| | |_) | (_) | |  | ||  __/     |_|   #
+# |_____/ \__,_| .__/ \___|_| |_____/ \__,_| .__/ \___/|_|   \__\___|           #
+#              | |                         | |                                  #
+#              |_|                         |_|                                  #
+
+
+# Caso queira trocar os textos do chat, edite o arquivo messages.yml
+
+# [Prefix]
+prefix: "&6[&eSuper&3Suporte&6]"
+prefix-allow: true
+
+configs:
+  responder:
+    players:
+      # Quando passa o mouse em cima da msg
+      # <player> <duvida> <resposta> <staff>
+      mousehover:
+        allow: true
+        text: "&c/duvida (duvida)"
+      
+      # Quando staff responde uma duvida, texto enviado aos jogadores online.
+      # <player> <duvida> <resposta> <staff>
+      resp-message:
+        show: true 
+        message:
+            - "&e<staff>&a respondeu a duvida do jogador &b<player>!"
+
+    staffs:
+      # Quando passa o mouse em cima da msg
+      # <player> <duvida> <resposta> <staff>
+      mousehover: 
+        allow: true
+        text: "&c<duvida> &4=> &6<resposta>"
+      
+      # Quando staff responde uma duvida, texto enviado aos outros staffs online.
+      # <player> <duvida> <resposta> <staff>
+      resp-message:
+        show: true
+        message:
+            - "&e<staff>&a respondeu a dúvida de &b<player>!"
+        
+  # Config duvida pendente
+  duvida-pendente:
+    allow: true

@@ -1,0 +1,99 @@
+#   _____                       _____                        _                  #
+#  / ____|                     / ____|                      | |            _    #
+# | (___  _   _ _ __   ___ _ _| (___  _   _ _ __   ___  _ __| |_ ___     _| |_  #
+#  \___ \| | | | '_ \ / _ \ '__\___ \| | | | '_ \ / _ \| '__| __/ _ \   |_   _| #
+#  ____) | |_| | |_) |  __/ |  ____) | |_| | |_) | (_) | |  | ||  __/     |_|   #
+# |_____/ \__,_| .__/ \___|_| |_____/ \__,_| .__/ \___/|_|   \__\___|           #
+#              | |                         | |                                  #
+#              |_|                         |_|                                  #
+
+
+#======================================  
+#
+#   Mensagens do Evento de Duvida
+#
+#======================================
+
+
+# Mensagem de erro, (contém uma duvida pendente)
+duvida_exist: "&c&lVocê ja mandou uma dúvida, aguarde uma resposta!"
+
+# Mensagem de erro, (duvida em branco)
+duvida_no_args: 
+    - "&7Digite /duvida (sua duvida)"
+    - "&7Exemplo:&a /duvida qual ip do servidor?"
+
+# Mensagem para o staff que recebe a duvida
+# <player> <duvida>
+duvida_staff_message: 
+    - "&7O player:&a <player>"
+    - "&7Enviou uma Duvida:&a <duvida>"
+    - " "
+    - "&cdigite /responder <player> (resposta)"
+    - " "
+
+# Mensagem para quem mandou a duvida
+# <player> <duvida>
+duvida_player_message: # <player> <duvida>
+    - "&7Sua duvida foi enviada com sucesso! aguarde um membro de nossa equipe responder."
+    - "&7Sua duvida:&a <duvida>"
+
+#======================================  
+#
+#   Mensagens do Evento de Resposta
+#
+#======================================
+
+
+# Mensagem de erro (resposta em branco)
+responder_no_args: 
+    - "&7Digite /responder (player) (resposta)"
+    - "&7Exemplo:&a /responder Joaozinho O ip do servidor é jogar.example.com"
+
+# Mensagem de erro (usuário offline)
+responder_offline: "&eEste jogador precisa estar online para você poder responder."
+
+# Mensagem para o autor da duvida
+# <duvida> <resposta> <staff>
+responder_player_message: "&e<staff> &aRepondeu sua dúvida: &6<resposta>" 
+
+
+#======================================  
+#
+#   Mensagens do Comando /duvidas
+#
+#======================================
+
+# Caso não exista nenhuma duvida pendente
+duvidas_empty: "&cSem Dúvidas." 
+
+# Nome do menu de duvidas
+duvidas_menuname: "&b>> Duvidas Pendentes <<"
+
+# Nome da head do jogador
+duvidas_head_name: "&b<player>"
+
+# Descrição do item no menu /duvidas
+# <player> <duvida> <criado>
+duvidas_head_description: 
+    - " "
+    - "&7Jogador: &a<player>"
+    - "&7Dúvida: &a<duvida>"
+    - "&7<criado>"
+    - " "
+    - "&cClique para Remover"
+
+#======================================  
+#
+#   Mensagens do Evento OnJoin
+#
+#======================================
+
+
+# Mensagem de duvida pendente Jogador
+# <player>
+duvidap_player: "&7Você tem uma duvida pendente, Aguarde uma resposta."
+
+# Mensagem de duvida pendente Staff
+# <player>
+duvidap_staff: "&7O jogador &3<player>&7 contém uma dúvida pendente, Digite &c/duvidas&7 e verifique"
